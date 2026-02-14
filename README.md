@@ -13,7 +13,8 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 3. Apply back substitution to find the values of unknowns.
 4. Print the computed solutions.
 ## Program:
-'''Program to solve a matrix using Gaussian elimination without partial pivoting.
+'''
+Program to solve a matrix using Gaussian elimination without partial pivoting.
 Developed by: SARAVANAN SHAM PRAKASH
 RegisterNumber: 212224230254
 '''
@@ -33,7 +34,7 @@ for i in range(n):
     if a[i][j] == 0:
         sys.exit('Divide by zero detected!')
 
-    for j in range(i+1, n):
+for j in range(i+1, n):
         ratio = a[j][i] / a[i][i]
         for k in range(n+1):
             a[j][k] = a[j][k] - ratio * a[i][k]
